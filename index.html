@@ -1,52 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <title>Dev Portfolio | David Ros</title>
   </head>
-
   <body>
-    <!-- Header -->
-    <header>
-      <div class="container header__content">
-        <nav class="header">
-          <h2 class="name">David Ros</h2>
-          <ul class="nav-links" aria-label="Main Navigation">
-            <li class="nav-link">
-              <a href="#about"><i class="bx bx-user"></i></a>
-            </li>
-            <li class="nav-link">
-              <a href="#work"><i class="bx bx-briefcase-alt-2"></i></a>
-            </li>
-            <li class="nav-link">
-              <a href="#skills"><i class="bx bx-dumbbell"></i></a>
-            </li>
-            <li class="nav-link">
-              <a href="#cv"><i class="bx bxs-file-export"></i></a>
-            </li>
-            <li class="nav-link">
-              <a href="#contact"><i class="bx bxs-contact"></i></a>
-            </li>
-          </ul>
-          <div class="nav-mobile"></div>
-        </nav>
+    <nav id="desktop-nav">
+      <div class="logo">David Ros</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </header>
-
-    <section class="about" id="about">
-      <div class="container about__content"></div>
-    </section>
+    </nav>
+    <nav id="mobile-nav">
+      <div class="logo">David Ros</div>
+      <div class="mobile-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="Assets/JS/main.js"></script>
   </body>
 </html>
