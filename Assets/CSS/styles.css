@@ -215,8 +215,20 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.66rem;
   margin-bottom: 1rem;
+}
+
+span {
+  margin-left: 5px;
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .title {
@@ -561,8 +573,16 @@ section {
 /* ICONS */
 
 .icon {
-  cursor: pointer;
   height: 3rem;
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  border-radius: 100px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  box-shadow: var(--hover-shadows);
 }
 
 /* BUTTONS */
