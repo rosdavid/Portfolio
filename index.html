@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <title>Dev Portfolio | David Ros</title>
   </head>
+
+  <!-- PORTFILIO START -->
   <body>
+    <!-- NAV START -->
+    <!-- DESKTOP -->
     <nav id="desktop-nav">
       <div class="logo">David Ros</div>
       <div>
@@ -20,6 +24,8 @@
         </ul>
       </div>
     </nav>
+    <!-- DESKTOP END -->
+    <!-- MOBILE -->
     <nav id="mobile-nav">
       <div class="logo">David Ros</div>
       <div class="mobile-menu">
@@ -36,6 +42,50 @@
         </div>
       </div>
     </nav>
+    <!-- MOBILE END -->
+    <!-- NAV END -->
+
+    <!-- SECTION PROFILE START -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="Assets/Images/ProfilePic.png"
+          alt="David Ros profile picture."
+          class="profile_pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">David Ros</h1>
+        <p class="section__text__p2">Frontend Developer | UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Assets/David Ros CV_Resume-compressed.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            class="icon"
+            src="Assets/Images/linkedin.png"
+            alt="LinkedIn Profile"
+            onclick="location.href='https://www.linkedin.com/in/david-ros-ferrer-40b2a4282/'"
+          />
+          <img
+            class="icon"
+            src="Assets/Images/github.png"
+            alt="GitHub Profile"
+            onclick="location.href='https://github.com/rosdavid'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- SECTION PROFILE END -->
     <script src="Assets/JS/main.js"></script>
   </body>
 </html>
