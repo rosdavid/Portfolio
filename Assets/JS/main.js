@@ -1,9 +1,13 @@
+//HAMBURGUER MENU
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+//TYPEWRITER EFFECT
 
 document.addEventListener("DOMContentLoaded", function (event) {
   var dataText = ["Frontend Developer", "UI/UX Designer"];
