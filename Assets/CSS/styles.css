@@ -113,11 +113,13 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: white;
-  width: fit-content;
+  background-color: #303030;
+  width: auto;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
 }
 
 .menu-links a {
@@ -214,7 +216,7 @@ section {
   margin-bottom: 1rem;
 }
 
-span {
+.typewriter {
   margin-left: 5px;
   border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
@@ -724,6 +726,10 @@ span {
   height: 3rem;
 }
 
+.text-container {
+  width: fit-content;
+}
+
 /* ABOUT ME SECTION END */
 
 /* SKILLS SECTION START */
@@ -743,7 +749,8 @@ span {
 .skills-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .article-container {
@@ -765,14 +772,173 @@ article .about {
 
 /* SKILLS SECTION END */
 
+/* PROJECTS SECTION START */
+
+#projects {
+  position: relative;
+}
+
+.project-img {
+  border-radius: 1rem;
+  width: 400px;
+}
+
+.project-title {
+  margin: 1rem;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+/* PROJECTS SECTION END */
+
+/* CONTACT SECTION START */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: -150px;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: #212121;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  border: 1px solid rgb(70, 70, 70);
+  text-align: center;
+  color: white;
+  transition: all 0.2s;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default !important;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* CONTACT SECTION END */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  #skills,
+  .skills-details-container {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .container-mouse {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  #about-me {
+    margin-top: -300px;
+  }
+
+  #projects {
+    margin-top: 400px;
+  }
+
+  .project-img {
+    border-radius: 1rem;
+    width: 300px;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
   #desktop-nav {
     display: none;
   }
 
   #mobile-nav {
     display: flex;
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  #skills {
+    margin-top: -100px;
+  }
+  #contact {
+    margin-top: 100px;
   }
 }

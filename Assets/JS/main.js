@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
       document.querySelector(".section__text__p2").innerHTML =
-        text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+        text.substring(0, i + 1) +
+        '<span class="typewriter" aria-hidden="true"></span>';
 
       setTimeout(function () {
         typeWriter(text, i + 1, fnCallback);
@@ -41,3 +42,64 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   StartTextAnimation(0);
 });
+
+//LINKS
+
+//Social Links
+function openLinkedIn() {
+  window.open(
+    "https://www.linkedin.com/in/david-ros-ferrer-40b2a4282/",
+    "_blank"
+  );
+}
+
+function openGithub() {
+  window.open("https://github.com/rosdavid/", "_blank");
+}
+
+//Project One
+function openGithubOne() {
+  window.open("https://github.com/rosdavid/liquoly/", "_blank");
+}
+
+function openProjectOne() {
+  window.open("http://liquoly.com/", "_blank");
+}
+
+//Project Two
+function openGithubTwo() {
+  window.open("https://github.com/rosdavid/el-pernilet/", "_blank");
+}
+
+function openProjectTwo() {
+  window.open("https://elpernilet.com/", "_blank");
+}
+
+//Project Three
+function openGithubThree() {
+  window.open("https://github.com/rosdavid/portfolio/", "_blank");
+}
+
+function openProjectThree() {
+  window.open("https://davidros.dev/", "_blank");
+}
+
+//REVEAL EFFECT
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}

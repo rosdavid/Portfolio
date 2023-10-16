@@ -115,13 +115,13 @@
             class="icon"
             src="Assets/Images/linkedin.png"
             alt="LinkedIn Profile"
-            onclick="location.href='https://www.linkedin.com/in/david-ros-ferrer-40b2a4282/'"
+            onclick="openLinkedIn()"
           />
           <img
             class="icon"
             src="Assets/Images/github.png"
             alt="GitHub Profile"
-            onclick="location.href='https://github.com/rosdavid'"
+            onclick="openGithub()"
           />
         </div>
       </div>
@@ -139,7 +139,7 @@
 
     <!-- SECTION ABOUT ME START -->
 
-    <section id="about-me">
+    <section id="about-me" class="reveal">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -190,7 +190,7 @@
 
     <!-- MOUSE ANIMATION START -->
 
-    <div class="container-mouse">
+    <div class="container-mouse reveal">
       <div class="mouse"></div>
     </div>
 
@@ -198,7 +198,7 @@
 
     <!-- SECTION SKILLS START -->
 
-    <section id="skills">
+    <section id="skills" class="reveal">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <p class="section__text__p1">(Detailed info on my CV)</p>
@@ -336,11 +336,140 @@
 
     <!-- MOUSE ANIMATION START -->
 
-    <div class="container-mouse">
+    <div class="container-mouse reveal">
       <div class="mouse"></div>
     </div>
 
     <!-- MOUSE ANIMATION END -->
+
+    <!-- SECTION PROJECTS START -->
+
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="card">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  class="project-img"
+                  src="/Assets/Images/liquoly.png"
+                  alt="liquoly e-commerce Shopify Project"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">LIQUOLY</h2>
+              <p class="section__text__p1 project-description">
+                Shopify e-commerce for drinks.
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-color-2" onclick="openGithubOne()">
+                  Github
+                </button>
+                <button class="btn btn-color-2" onclick="openProjectOne()">
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="card">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  class="project-img"
+                  src="/Assets/Images/elpernilet.png"
+                  alt="el pernilet Landing Page Bubble Project"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">EL PERNILET</h2>
+              <p class="section__text__p1 project-description">
+                Landing Page for a service company on Bubble.io.
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-color-2" onclick="openGithubTwo()">
+                  Github
+                </button>
+                <button class="btn btn-color-2" onclick="openProjectTwo()">
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="card">
+            <div class="details-container">
+              <div class="article-container">
+                <img
+                  class="project-img"
+                  src="/Assets/Images/elpernilet.png"
+                  alt="David Ros Porfolio"
+                />
+              </div>
+              <h2 class="skills-sub-title project-title">PORTFOLIO</h2>
+              <p class="section__text__p1 project-description">
+                My portfolio page
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-color-2" onclick="openGithubThree()">
+                  Github
+                </button>
+                <button class="btn btn-color-2" onclick="openProjectThree()">
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROJECTS END -->
+
+    <!-- MOUSE ANIMATION START -->
+
+    <div class="container-mouse reveal">
+      <div class="mouse"></div>
+    </div>
+
+    <!-- MOUSE ANIMATION END -->
+
+    <!-- SECTION CONTACT START -->
+
+    <section id="contact" class="reveal">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            class="about contact-icon email-icon"
+            src="/Assets/Images/email.png"
+            alt="Email Icon"
+          />
+          <p>
+            <a href="mailto:davidros.dev@proton.me">Email Me</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            class="about contact-icon"
+            src="/Assets/Images/linkedin.png"
+            alt="LinkedIn Icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/david-ros-ferrer-40b2a4282/"
+              target="”_blank”"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT END -->
 
     <script src="Assets/JS/main.js"></script>
   </body>
