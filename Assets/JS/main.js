@@ -49,6 +49,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 //LINKS
 
+//Navigation Mobile
+function goIndex() {
+  window.location.href = "/";
+}
+
 //Social Links
 function openLinkedIn() {
   window.open(
