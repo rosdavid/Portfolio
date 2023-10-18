@@ -711,13 +711,12 @@ section {
 
 .section__gif-container {
   display: flex;
-  width: 640px;
+  width: 590px;
   margin: auto 0;
 }
 
 .about-gif {
   cursor: default;
-  height: 40rem;
 }
 
 .card {
