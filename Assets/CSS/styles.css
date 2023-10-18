@@ -1059,6 +1059,23 @@ footer {
   .details-container-project {
     height: auto;
   }
+  .details-container-2 {
+    background-color: rgb(33, 33, 33);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    text-align: center;
+    color: white;
+    width: 80vw;
+    padding: 1rem;
+    flex: 1 1 0%;
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(70, 70, 70);
+    border-image: initial;
+    transition: all 0.2s ease 0s;
+  }
   .section__gif-container {
     display: flex;
     justify-content: center;
