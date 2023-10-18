@@ -15,13 +15,21 @@ body {
   font-family: "Poppins", sans-serif;
   background: #212121;
   background: linear-gradient(135deg, #212121, #151518);
-  opacity: 0.8;
-  background-image: linear-gradient(#282828 2px, transparent 2px),
-    linear-gradient(90deg, #282828 2px, transparent 2px),
-    linear-gradient(#282828 1px, transparent 1px),
-    linear-gradient(90deg, #282828 1px, #212121 1px);
-  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  background-image: linear-gradient(
+    to left bottom,
+    #3b2e42,
+    #352c3c,
+    #2f2a37,
+    #2a2830,
+    #26252a,
+    #242327,
+    #222223,
+    #202020,
+    #202020,
+    #1f201f,
+    #1f1f1f,
+    #1f1f1f
+  );
 }
 
 p {
@@ -184,7 +192,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: fit-content;
+  margin-top: 10rem;
 }
 
 .section__pic-container {
@@ -239,7 +248,6 @@ section {
   width: 400px;
   height: 400px;
   transition: 200ms;
-  margin-top: 100px;
 }
 
 .container:active {
@@ -265,7 +273,7 @@ section {
 #prompt {
   z-index: 20;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   transition: 300ms ease-in-out-out;
   position: absolute;
   color: rgb(255, 255, 255);
@@ -615,10 +623,8 @@ section {
 /* MOUSE ANIMATION START */
 
 .container-mouse {
-  margin-top: -25px;
-  margin-bottom: 100px;
   width: 100%;
-  height: 100%;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,8 +647,8 @@ section {
     background-color: #ffffff;
     border-radius: 50%;
     opacity: 1;
-    animation: wheel 2s infinite;
     -webkit-animation: wheel 2s infinite;
+    animation: wheel 2s infinite;
   }
 }
 
@@ -667,7 +673,6 @@ section {
 #about-me {
   position: relative;
   height: fit-content;
-  margin-bottom: 200px;
 }
 
 .about-containers {
@@ -689,6 +694,32 @@ section {
   justify-content: center;
 }
 
+.about-containers-2,
+.about-details-container-2 {
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 46vw;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.section__gif-container {
+  display: flex;
+  width: 640px;
+  margin: auto 0;
+}
+
+.about-gif {
+  cursor: default;
+  height: 40rem;
+}
+
 .card {
   background: linear-gradient(
     43deg,
@@ -707,6 +738,7 @@ section {
 
 .details-container {
   padding: 1rem;
+  flex: 1;
   border-radius: 16px;
   background-color: #212121;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -715,11 +747,46 @@ section {
   text-align: center;
   color: white;
   transition: all 0.2s;
-  min-width: 20vw;
+  width: 35vw;
 }
 
 .details-container:hover {
-  transform: scale(0.98);
+  transform: scale(0.99);
+}
+
+.details-container-2 {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 16px;
+  background-color: #212121;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  border: 1px solid rgb(70, 70, 70);
+  text-align: center;
+  color: white;
+  transition: all 0.2s;
+  width: 20vw;
+}
+
+.details-container-2:hover {
+  transform: scale(0.99);
+}
+
+.details-container-project {
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #212121;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  border: 1px solid rgb(70, 70, 70);
+  text-align: center;
+  color: white;
+  transition: all 0.2s;
+  height: 35rem;
+}
+
+.details-container-project:hover {
+  transform: scale(0.99);
 }
 
 .about {
@@ -737,7 +804,7 @@ section {
 
 #skills {
   position: relative;
-  margin-bottom: -300px;
+  height: fit-content;
 }
 
 .skills-sub-title {
@@ -777,6 +844,7 @@ article .about {
 
 #projects {
   position: relative;
+  height: fit-content;
 }
 
 .project-img {
@@ -820,8 +888,7 @@ article .about {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
-  margin-top: -150px;
+  height: fit-content;
 }
 
 .contact-info-upper-container {
@@ -912,11 +979,11 @@ article .about {
     margin-top: 0;
   }
   #about-me {
-    margin-top: -300px;
+    margin-top: 10rem;
   }
 
   #projects {
-    margin-top: 400px;
+    margin-top: 10rem;
   }
 
   .project-img {
@@ -928,6 +995,31 @@ article .about {
   }
   .container {
     display: none;
+  }
+  .details-container {
+    width: auto;
+  }
+  .details-container-project {
+    height: auto;
+  }
+  .section__gif-container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+  }
+  .about-containers-2,
+  .about-details-container-2 {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .about-text {
+    text-align: center;
   }
 }
 
@@ -944,8 +1036,8 @@ article .about {
     height: 40vh;
   }
   #profile {
-    height: 83vh;
-    margin-bottom: 0;
+    height: fit-content;
+    margin-top: 7rem;
   }
   article {
     font-size: 1rem;
@@ -960,9 +1052,9 @@ article .about {
     flex-wrap: wrap;
   }
   #skills {
-    margin-top: -100px;
+    margin-top: 10rem;
   }
   #contact {
-    margin-top: 100px;
+    margin-top: 10rem;
   }
 }
