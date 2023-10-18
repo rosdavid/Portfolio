@@ -937,6 +937,10 @@ article .about {
   opacity: 1;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
@@ -1042,9 +1046,10 @@ article .about {
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  footer {
+    height: 50px;
+    margin-top: 10rem;
+    margin-bottom: 0.5rem;
   }
   .about-containers,
   .contact-info-upper-container,
