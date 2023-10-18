@@ -66,6 +66,7 @@ nav {
   border-radius: 100px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
   border: 1px solid rgba(100, 100, 100, 0.51);
 }
 
@@ -134,6 +135,7 @@ a:hover {
   transition: all 0.3 ease-in-out;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
 }
 
 .menu-links a {
@@ -157,6 +159,7 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
   border: 1px solid rgba(100, 100, 100, 0.51);
 }
 
@@ -755,6 +758,7 @@ section {
   background-color: #212121;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgb(70, 70, 70);
   text-align: center;
   color: white;
@@ -773,6 +777,7 @@ section {
   background-color: #212121;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgb(70, 70, 70);
   text-align: center;
   color: white;
@@ -789,6 +794,7 @@ section {
   background-color: #212121;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgb(70, 70, 70);
   text-align: center;
   color: white;
@@ -910,6 +916,7 @@ article .about {
   background-color: #212121;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgb(70, 70, 70);
   text-align: center;
   color: white;
@@ -974,6 +981,7 @@ footer {
     background-color: rgb(33, 33, 33);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
     backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
     text-align: center;
     color: white;
     width: 20vw;

@@ -5,7 +5,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
     <link rel="stylesheet" href="Assets/CSS/styles.css" />
+    <meta
+      property="og:image"
+      content="https://davidros.vercel.app/Assets/Images/my-portfolio.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
     <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
     <title>Dev Portfolio | David Ros</title>
   </head>
@@ -44,10 +52,12 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <ul>
+            <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -151,7 +161,7 @@
         <div class="section__gif-container">
           <img
             class="about-gif"
-            src="/Assets/Images/3dgifmaker60313.gif"
+            src="/Assets/Images/logo-animated.gif"
             alt="Logo Animated"
           />
         </div>
