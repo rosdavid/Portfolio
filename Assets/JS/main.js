@@ -79,7 +79,7 @@ function openGithubThree() {
 }
 
 function openProjectThree() {
-  window.open("https://davidros.dev/", "_blank");
+  window.open("https://davidros.vercel.app/", "_blank");
 }
 
 //REVEAL EFFECT
