@@ -83,8 +83,13 @@ a:hover {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   color: white;
+  text-align: center;
 }
 
 .logo:hover {
@@ -147,6 +152,12 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  width: max-content;
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  border: 1px solid rgba(100, 100, 100, 0.51);
 }
 
 .hamburger-icon.open span:first-child {
