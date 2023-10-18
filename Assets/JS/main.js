@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       setTimeout(function () {
         StartTextAnimation(0);
       }, 500);
-    }
-
-    if (i < dataText[i].length) {
+    } else if (i < dataText[i].length) {
       typeWriter(dataText[i], 0, function () {
         StartTextAnimation(i + 1);
       });
@@ -94,7 +92,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 150;
+    var revealpoint = 100;
 
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
