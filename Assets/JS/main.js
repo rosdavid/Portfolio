@@ -10,7 +10,13 @@ function toggleMenu() {
 //TYPEWRITER EFFECT
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  var dataText = ["Frontend Developer", "UI/UX Designer"];
+  var dataText = [
+    "Frontend Developer",
+    "UI/UX Designer",
+    "Music Lover",
+    "Passionate Gamer",
+    "Film Enthusiast",
+  ];
 
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
