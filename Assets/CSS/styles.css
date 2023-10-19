@@ -1210,7 +1210,7 @@ footer {
     display: block;
   }
   .container-mouse {
-    display: none;
+    height: auto;
   }
   section,
   .section-container {
@@ -1228,11 +1228,18 @@ footer {
     margin-top: 0;
   }
   #about-me {
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   #projects {
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #experience {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .project-img {
@@ -1332,9 +1339,10 @@ footer {
     flex-wrap: wrap;
   }
   #skills {
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
   #contact {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
