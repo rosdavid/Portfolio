@@ -628,6 +628,25 @@ section {
     letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
 }
 
+.btn2 {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  border: #313131 0.1rem solid;
+  background-color: #212121;
+  color: white;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+}
+
+.btn-color-3:hover {
+  cursor: pointer;
+  box-shadow: var(--hover-shadows);
+}
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
@@ -831,6 +850,14 @@ section {
   margin-bottom: 2rem;
 }
 
+.skills-sub-title2 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
 .skills-details-container {
   display: flex;
   justify-content: center;
@@ -878,6 +905,16 @@ article .about {
   padding: 20px;
   gap: 0.5rem;
   width: 400px;
+  margin-bottom: -10px;
+}
+
+.tech-stack2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 0.5rem;
   margin-bottom: -10px;
 }
 
@@ -945,6 +982,201 @@ article .about {
 }
 
 /* CONTACT SECTION END */
+
+/* EXPERIENCE SECTION START */
+
+#experience {
+  height: fit-content;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  border-radius: 25px;
+}
+
+.card2 {
+  gap: 10rem;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.years {
+  text-align: center;
+  font-size: small;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #265df2;
+}
+
+.swiper-navBtn {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 46%,
+    rgb(255, 204, 112) 100%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #212121;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 25px;
+  width: 80%;
+}
+
+.close-one {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-one:hover,
+.close-one:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* EXPERIENCE SECTION END */
 
 .reveal {
   position: relative;
@@ -1092,9 +1324,15 @@ footer {
     width: auto;
     margin: auto;
   }
-
   .about-text {
     text-align: center;
+  }
+  .skills-sub-title2 {
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
 }
 

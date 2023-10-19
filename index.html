@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache" />
+    <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <meta name="theme-color" content="#212121" />
     <meta
@@ -34,6 +35,7 @@
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -59,6 +61,7 @@
             <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
@@ -493,6 +496,132 @@
 
     <!-- MOUSE ANIMATION END -->
 
+    <!-- SECTION EXPERIENCE START -->
+    <section id="experience" class="reveal">
+      <p class="section__text__p1">Where I worked</p>
+      <h1 class="title">Experience</h1>
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="details-container-project swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img
+                      src="Assets/Images/elpernilet-logo.png"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="years">2018 - Currently</p>
+                  <p class="section__text__p1">
+                    Front-end Developer | UX/UI Designer
+                  </p>
+                  <h2 class="skills-sub-title project-title">EL PERNILET</h2>
+                  <p class="description">
+                    Event services company located in Barcelona.
+                  </p>
+                  <button class="btn2 btn-color-3" id="btn-open-one">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="details-container-project swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img
+                      src="Assets/Images/liquoly-logo.png"
+                      alt=""
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p class="years">2023 - Currently</p>
+                  <p class="section__text__p1">
+                    Front-end Developer | UX/UI Designer
+                  </p>
+                  <h2 class="skills-sub-title project-title">LIQUOLY</h2>
+                  <p class="description">
+                    Beverage e-commerce company located in Barcelona.
+                  </p>
+                  <button class="btn2 btn-color-3" id="btn-open-two">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Popups Start -->
+
+    <div id="modal-one" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-one">&times;</span>
+        <h2 class="skills-sub-title2">EL PERNILET</h2>
+        <p class="about-text2">
+          Responsibilities: Brand development, technical support, marketing and
+          advertising, SEO, development and design of the page.
+        </p>
+        <div class="tech-stack2">
+          <p class="tech">HTML</p>
+          <p class="tech">CSS</p>
+          <p class="tech">JavaScript</p>
+          <p class="tech">jQuery</p>
+          <p class="tech">Bubble</p>
+          <p class="tech">Figma</p>
+          <p class="tech">Git</p>
+          <p class="tech">API</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-two" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="skills-sub-title2">LIQUOLY</h2>
+        <p class="about-text2">
+          Responsibilities: Brand development, technical support, marketing and
+          advertising, SEO, development and design of the page.
+        </p>
+        <div class="tech-stack2">
+          <p class="tech">HTML</p>
+          <p class="tech">CSS</p>
+          <p class="tech">JavaScript</p>
+          <p class="tech">Bootstrap</p>
+          <p class="tech">jQuery</p>
+          <p class="tech">Liquid</p>
+          <p class="tech">Figma</p>
+          <p class="tech">Git</p>
+          <p class="tech">JSON</p>
+        </div>
+      </div>
+    </div>
+    <!-- Popups End -->
+
+    <!-- SECTION EXPERIENCE END -->
+
+    <!-- MOUSE ANIMATION START -->
+
+    <div class="container-mouse reveal">
+      <p class="section__text__p1">Keep Scrolling</p>
+      <div class="mouse"></div>
+    </div>
+
+    <!-- MOUSE ANIMATION END -->
+
     <!-- SECTION CONTACT START -->
 
     <section id="contact" class="reveal">
@@ -534,6 +663,7 @@
     </footer>
     <!-- FOOTER END -->
 
+    <script src="Assets/JS/swiper-bundle.min.js"></script>
     <script src="Assets/JS/main.js"></script>
     <script>
       window.va =

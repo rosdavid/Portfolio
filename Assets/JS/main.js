@@ -112,3 +112,73 @@ function reveal() {
     }
   }
 }
+
+//EXPERIENCE
+
+var modalOne = document.getElementById("modal-one");
+var btnOne = document.getElementById("btn-open-one");
+var spanOne = document.getElementsByClassName("close-one")[0];
+
+btnOne.onclick = function () {
+  modalOne.style.display = "block";
+};
+
+spanOne.onclick = function () {
+  modalOne.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modalOne) {
+    modalOne.style.display = "none";
+  }
+};
+
+var modal = document.getElementById("modal-two");
+var btn = document.getElementById("btn-open-two");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+//SWIPER SLIDER
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 2,
+  spaceBetween: 25,
+  loop: false,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 2,
+    },
+  },
+});
