@@ -161,7 +161,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 auto;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -958,7 +958,6 @@ section {
 @media (max-width: 767px){
   .timeline{
     width: 100%;
-    left: 10%;
   }
   .timeline:before{
     left: 20px;
