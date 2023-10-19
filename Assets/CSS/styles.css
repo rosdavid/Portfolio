@@ -858,6 +858,15 @@ section {
   margin-bottom: 2rem;
 }
 
+.skills-sub-title3 {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: -10px;
+}
+
 .skills-details-container {
   display: flex;
   justify-content: center;
@@ -1333,6 +1342,14 @@ footer {
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+  }
+  .skills-sub-title3 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: -10px;
   }
 }
 
