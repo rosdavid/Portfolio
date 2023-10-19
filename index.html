@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache" />
-    <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <meta name="theme-color" content="#212121" />
     <meta
       property="og:image"
@@ -18,6 +16,12 @@
     <meta property="og:image:height" content="1024" />
     <meta property="og:link" content="https://davidros.vercel.app" />
     <meta property="og:title" content="Frontend Developer | David Ros" />
+    <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
     <title>Dev Portfolio | David Ros</title>
   </head>
@@ -50,7 +54,7 @@
         <img src="Assets/Images/logo.png" alt="David Ros Logo" class="about" />
         David Ros
       </div>
-      <div class="mobile-menu">
+      <!-- <div class="mobile-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -65,8 +69,43 @@
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </nav>
+
+    <div class="nav__menu" id="tabbar-menu">
+      <ul class="tabbar__list">
+        <li class="tabbar__item">
+          <a href="#mobile-nav" class="tabbar__link">
+            <i class="bx bx-home-alt tabbar__icon"></i>
+          </a>
+        </li>
+        <li class="tabbar__item">
+          <a href="#about-me" class="tabbar__link">
+            <i class="bx bx-user tabbar__icon"></i>
+          </a>
+        </li>
+        <li class="tabbar__item">
+          <a href="#skills" class="tabbar__link">
+            <i class="bx bx-book-alt tabbar__icon"></i>
+          </a>
+        </li>
+        <li class="tabbar__item">
+          <a href="#projects" class="tabbar__link">
+            <i class="bx bx-code-alt tabbar__icon"></i>
+          </a>
+        </li>
+        <li class="tabbar__item">
+          <a href="#experience" class="tabbar__link">
+            <i class="bx bx-briefcase-alt tabbar__icon"></i>
+          </a>
+        </li>
+        <li class="tabbar__item">
+          <a href="#contact" class="tabbar__link">
+            <i class="bx bx-message-square-detail tabbar__icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- MOBILE END -->
 
