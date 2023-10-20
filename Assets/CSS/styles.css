@@ -113,6 +113,10 @@ a:hover {
 
 /* MOBILE MENU */
 
+#mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 600px){
   .nav__menu{
     position: fixed;
@@ -168,7 +172,7 @@ section {
 
 .section-container {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 /* PROFILE SECTION START */
@@ -737,6 +741,12 @@ section {
 .about-text {
   text-align: left;
   line-height: 2rem;
+}
+
+.section__gif-container {
+  display: flex;
+  width: 590px;
+  margin-left: -30px;
 }
 
 .about-gif {
@@ -1350,8 +1360,9 @@ footer {
 
 @media (min-width: 1600px) {
   .section__gif-container {
-    margin-left: -100px;
-
+    display: flex;
+    width: 590px;
+    margin-left: 150px;
   }
   .about-containers-2,
   .about-details-container-2 {
@@ -1377,9 +1388,6 @@ footer {
     border-image: initial;
     transition: all 0.2s ease 0s;
   }
-  #mobile-nav {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1390,15 +1398,9 @@ footer {
   .about-containers {
     flex-wrap: wrap;
   }
-  #mobile-nav {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1200px) {
-  #mobile-nav {
-    display: none;
-  }
   #skills,
   .skills-details-container {
     margin-top: 2rem;
