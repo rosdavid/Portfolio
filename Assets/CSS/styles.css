@@ -1377,6 +1377,9 @@ footer {
     border-image: initial;
     transition: all 0.2s ease 0s;
   }
+  #mobile-nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1386,6 +1389,9 @@ footer {
   }
   .about-containers {
     flex-wrap: wrap;
+  }
+  #mobile-nav {
+    display: none;
   }
 }
 
