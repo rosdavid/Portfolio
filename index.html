@@ -23,8 +23,15 @@
     <link rel="stylesheet" href="Assets/CSS/styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    /></noscript>
     <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
     <title>David Ros | Frontend Developer &#38; UX/UI Designer</title>
   </head>
