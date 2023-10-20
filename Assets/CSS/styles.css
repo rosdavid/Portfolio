@@ -1390,6 +1390,9 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+  #mobile-nav {
+    display: none;
+  }
   #skills,
   .skills-details-container {
     margin-top: 2rem;
