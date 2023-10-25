@@ -861,10 +861,15 @@ section {
 }
 
 .right-text {
+  text-wrap: balance;
+  width: 80%;
   text-align: start !important;
 }
 
 .left-text {
+  display: inline-flex;
+  width: 80%;
+  text-wrap: balance;
   text-align: end !important;
 }
 
