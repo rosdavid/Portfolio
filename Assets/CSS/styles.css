@@ -152,9 +152,9 @@ section {
 }
 
 .section-container {
-  margin-top: 20px;
   display: flex;
-  margin: 10px auto;
+  padding: 10px;
+  gap: 180px;
 }
 
 /* PROFILE SECTION START */
@@ -729,8 +729,7 @@ section {
 .section__gif-container {
 	animation: rotate-center 2.5s ease-in-out infinite alternate-reverse both;
   display: flex;
-  width: 590px;
-  margin-left: -30px;
+  width: 400px;
 }
 
 .pic_animated {
@@ -1486,7 +1485,6 @@ footer {
     display: flex;
     justify-content: center;
     width: 300px;
-    margin: auto;
   }
   .about-containers-2,
   .about-details-container-2 {
@@ -1556,5 +1554,6 @@ footer {
   .pic_animated {
     width: 200px;
     height: 200px;
+    margin-left: 70px;
   }
 }
