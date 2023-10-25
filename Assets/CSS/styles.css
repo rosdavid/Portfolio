@@ -1053,6 +1053,7 @@ article .about {
   border-radius: 1rem;
   width: 400px;
   height: 300px;
+  aspect-ratio: 1.40;
 }
 
 .tech-stack {
