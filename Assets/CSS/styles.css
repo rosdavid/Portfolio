@@ -1485,7 +1485,6 @@ footer {
   .section__gif-container {
     display: flex;
     justify-content: center;
-    height: 300px;
     width: 300px;
     margin: auto;
   }
@@ -1553,5 +1552,9 @@ footer {
   }
   #contact {
     margin-top: 5rem;
+  }
+  .pic_animated {
+    width: 200px;
+    height: 200px;
   }
 }
