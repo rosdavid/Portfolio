@@ -29,21 +29,6 @@ body {
   font-family: "Poppins", sans-serif;
   background: #151515;
   background: radial-gradient(circle, rgba(28,28,28,1) 0%, rgba(32,25,36,1) 50%, rgba(28,28,28,1) 100%);
-  /* background-image: linear-gradient(
-    to left bottom,
-    #3b2e42,
-    #352c3c,
-    #2f2a37,
-    #2a2830,
-    #26252a,
-    #242327,
-    #222223,
-    #202020,
-    #202020,
-    #1f201f,
-    #1f1f1f,
-    #1f1f1f
-  ); */
 }
 
 p {
@@ -589,7 +574,8 @@ section {
 /* ICONS */
 
 .icon {
-  height: 3rem;
+  height: 48px;
+  width: 48px;
   --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
   transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
     letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
@@ -816,7 +802,8 @@ section {
 
 .about {
   cursor: default;
-  height: 3rem;
+  height: 48px;
+  width: 48px;
 }
 
 .text-container {
@@ -1067,6 +1054,7 @@ article .about {
   position: relative;
   border-radius: 1rem;
   width: 400px;
+  height: 300px;
 }
 
 .tech-stack {
@@ -1147,10 +1135,13 @@ article .about {
 
 .contact-icon {
   cursor: default !important;
+  height: 3rem;
+  width: 3rem;
 }
 
 .email-icon {
   height: 2.5rem;
+  width: 2.5rem;
 }
 
 /* CONTACT SECTION END */
@@ -1443,6 +1434,7 @@ footer {
   .project-img {
     border-radius: 1rem;
     width: 300px;
+    height: 200px;
   }
   .tech-stack {
     width: auto;
