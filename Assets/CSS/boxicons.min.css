@@ -29,6 +29,9 @@
 .bx-user:before {
   content: "\ec63";
 }
+.bx-book-alt:before {
+  content: "\e9e3";
+}
 .bx-code-alt:before {
   content: "\ea69";
 }
