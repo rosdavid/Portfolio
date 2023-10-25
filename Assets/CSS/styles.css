@@ -152,8 +152,9 @@ section {
 }
 
 .section-container {
+  margin-top: 20px;
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 /* PROFILE SECTION START */
@@ -726,9 +727,24 @@ section {
 }
 
 .section__gif-container {
+	animation: rotate-center 2.5s ease-in-out infinite alternate-reverse both;
   display: flex;
   width: 590px;
   margin-left: -30px;
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+.pic__animated {
 }
 
 .about-gif {
