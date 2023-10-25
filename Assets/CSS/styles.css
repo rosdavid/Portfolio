@@ -1203,8 +1203,8 @@ article .about {
 }
 
 .card-image .card-img {
-  height: 100%;
-  width: 100%;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
